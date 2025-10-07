@@ -3,7 +3,7 @@ import Icon from '../user-components/Icon.astro';
 ---
 
 {/* This is intentionally inlined to avoid FOUC. */}
-<script is:inline>
+<!-- <script is:inline>
 	window.StarlightThemeProvider = (() => {
 		const storedTheme =
 			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
@@ -29,7 +29,7 @@ import Icon from '../user-components/Icon.astro';
 			},
 		};
 	})();
-</script>
+</script> -->
 
 <template id="theme-icons">
 	<Icon name="sun" class="light" />

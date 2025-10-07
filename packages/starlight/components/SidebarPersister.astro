@@ -32,7 +32,7 @@ declare global {
 ---
 
 <sl-sidebar-state-persist data-hash={hash}>
-	<script is:inline aria-hidden="true">
+	<!-- <script is:inline aria-hidden="true">
 		(() => {
 			try {
 				if (!matchMedia('(min-width: 50em)').matches) return;
@@ -55,16 +55,16 @@ declare global {
 				);
 			} catch {}
 		})();
-	</script>
+	</script> -->
 
 	<slot />
 
-	<script is:inline aria-hidden="true">
+	<!-- <script is:inline aria-hidden="true">
 		(() => {
 			const scroller = document.getElementById('starlight__sidebar');
 			if (!window._starlightScrollRestore || !scroller) return;
 			scroller.scrollTop = window._starlightScrollRestore;
 			delete window._starlightScrollRestore;
 		})();
-	</script>
+	</script> -->
 </sl-sidebar-state-persist>
