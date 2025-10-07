@@ -61,7 +61,7 @@ if (pagefindEnabled) mainDataAttributes['data-pagefind-body'] = '';
 			<script src="./SidebarPersistState"></script>
 			<TwoColumnContent>
 				<PageSidebar slot="right-sidebar" />
-				<main
+				<div
 					{...mainDataAttributes}
 					lang={starlightRoute.entryMeta.lang}
 					dir={starlightRoute.entryMeta.dir}
@@ -93,7 +93,7 @@ if (pagefindEnabled) mainDataAttributes['data-pagefind-body'] = '';
 							</>
 						)
 					}
-				</main>
+				</div>
 			</TwoColumnContent>
 		</PageFrame>
 	</body>
