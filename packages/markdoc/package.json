@@ -21,6 +21,10 @@
     "@astrojs/starlight": "workspace:*",
     "vitest": "^3.0.5"
   },
+  "peerDependencies": {
+    "@astrojs/markdoc": ">=0.12.1",
+    "@astrojs/starlight": ">=0.35.0"
+  },
   "publishConfig": {
     "provenance": true
   }
