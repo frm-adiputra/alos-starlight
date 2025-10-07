@@ -50,32 +50,6 @@ if (pagefindEnabled) mainDataAttributes['data-pagefind-body'] = '';
 <html lang={starlightRoute.lang} dir={starlightRoute.dir} {...htmlDataAttributes}>
 	<head>
 		<Head />
-		<style>
-			html:not([data-has-toc]) {
-				--sl-mobile-toc-height: 0rem;
-			}
-			html:not([data-has-sidebar]) {
-				--sl-content-width: 67.5rem;
-			}
-			/* Add scroll padding to ensure anchor headings aren't obscured by nav */
-			html {
-				/* Additional padding is needed to account for the mobile TOC */
-				scroll-padding-top: calc(1.5rem + var(--sl-nav-height) + var(--sl-mobile-toc-height));
-			}
-			main {
-				padding: var(--sl-main-pad);
-			}
-			@media (min-width: 50em) {
-				[data-has-sidebar] {
-					--sl-content-inline-start: var(--sl-sidebar-width);
-				}
-			}
-			@media (min-width: 72em) {
-				html {
-					scroll-padding-top: calc(1.5rem + var(--sl-nav-height));
-				}
-			}
-		</style>
 		<ThemeProvider />
 		<link rel="stylesheet" href={printHref} media="print" />
 	</head>
