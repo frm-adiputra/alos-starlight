@@ -14,18 +14,16 @@ const shouldRenderSearch =
 	config.pagefind || config.components.Search !== '@astrojs/starlight/components/Search.astro';
 ---
 
-<div class="header">
-	<div class="title-wrapper sl-flex">
-		<SiteTitle />
-	</div>
+<>
+	<SiteTitle />
 	<div class="sl-flex print:hidden">
 		{shouldRenderSearch && <Search />}
 	</div>
-	<div class="sl-hidden md:sl-flex print:hidden right-group">
+	<div role="group">
 		<div class="sl-flex social-icons">
 			<SocialIcons />
 		</div>
 		<ThemeSelect />
 		<LanguageSelect />
 	</div>
-</div>
+</>
